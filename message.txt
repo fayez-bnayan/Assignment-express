@@ -1,0 +1,1 @@
+{"fname":"fayez","lname":["bnyan","fayez1234"],"password":"fayez1234","email":"fayezbnyan@gmail.com","Month":"05","day":"04","year":"1998","Gender":"Male"}
