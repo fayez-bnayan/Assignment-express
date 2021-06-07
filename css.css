@@ -1,0 +1,61 @@
+body{
+    box-sizing: border-box;
+    background-color: beige;
+    
+   
+}
+#lname{
+margin-left: 28px;
+}
+#password{
+padding-left: 122.5px;
+padding-right: 122.5px;
+
+}
+form{
+    width: 35%;
+    border: 3px solid rgb(14, 14, 177);
+    margin-left: 80px;
+    padding: 40px;
+    padding-bottom: 8px;
+    margin-top: 150px;
+    margin: 40px 40px;
+    margin-bottom: 30%;
+   
+}
+input{
+    border: 2px solid  rgb(14, 14, 177);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    background-color: rgb(164, 248, 248);
+    
+ 
+   
+}
+#send{
+  margin-top: 150px;
+  margin-bottom: 20px;
+}
+button{
+  padding: 8px   200px;
+  margin-top: 40px;
+  margin-bottom:40px;
+  
+}
+
+.item_2{
+border-radius: 50px;
+padding-top: 20px;
+font-weight: bolder;
+}
+.items{
+    padding-top:8px ;
+    
+}
+#R1{
+    padding-left: 200px;
+}
+#cc{
+font-weight: bolder;
+}
