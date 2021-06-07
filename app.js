@@ -5,10 +5,9 @@ const bodyParser = require("body-parser")
 const path = require("path")
 const fs = require("fs")
 
-server.configure(function(){
-  server.use('/media', express.static(__dirname + '/media'));
-  server.use(express.static(__dirname + '/public'));
-});
+
+app.use(express.static(__dirname + '/public'));
+
 
 
 
@@ -19,18 +18,16 @@ app.get("/", (req, res, next)=>{
   res.sendFile(path.join(__dirname,"..","Assignment","express.html"))
 })
 
-  
-app.get("/sign", (req, res, next)=>{
-    res.sendFile(path.join(__dirname,"..","Assignment","index.html"))
-  })
-  
+
   
 
 app.post("/signup", bodyParserMW, (req, res, next)=>{
     console.log(req.body)
+
+    res.sendFile(path.join(__dirname,"..","Assignment","index.html"))
     fs.writeFileSync("message.txt" ,JSON.stringify(req.body));
     res.end();
 })
-app.listen(3001, ()=>{
+app.listen(3000, ()=>{
     console.log("listening on 3000...")
 })
