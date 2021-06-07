@@ -5,7 +5,7 @@ const bodyParser = require("body-parser")
 const path = require("path")
 const fs = require("fs")
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 const bodyParserMW = bodyParser.urlencoded({
