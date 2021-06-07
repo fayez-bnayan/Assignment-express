@@ -5,7 +5,11 @@ const bodyParser = require("body-parser")
 const path = require("path")
 const fs = require("fs")
 
-app.use(express.static(path.join(__dirname, 'public')));
+server.configure(function(){
+  server.use('/media', express.static(__dirname + '/media'));
+  server.use(express.static(__dirname + '/public'));
+});
+
 
 
 const bodyParserMW = bodyParser.urlencoded({
